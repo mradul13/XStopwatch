@@ -5,7 +5,7 @@ export const formatTime = (time)=>{
     minutes = `${minutes%60}`;
     let hours = `${Math.floor(time/3600)}`
     if(hours==='0'){
-        return `${minutes} : ${seconds}`
+        return `${minutes}:${seconds}`
     }
-    return `${hours} : ${minutes} : ${seconds}`
+    return `${hours}:${minutes}:${seconds}`
 }
